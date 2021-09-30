@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'Modules/Home/home_page.dart';
+import 'Modules/Splash/splash_page.dart';
 
 class AppWidget extends StatelessWidget {
   @override
@@ -11,9 +12,10 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: "/home",
+      initialRoute: "/splash",
       routes: {
         "/home": (context) => HomePage(),
+        "/splash": (context) => SplashPage()
       },
     );
   }
